@@ -1,0 +1,53 @@
+{
+  "name": "BM",
+  "version": "0.1.0",
+  
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emokhtareg/Book-Management-System.git"
+  },
+  "scripts": {
+    "dev": "ts-node server.ts",
+    "build": "next build",
+    "start": "set NODE_ENV=production && ts-node server.ts",
+    "lint": "eslint .",
+    "wdio": "wdio run wdio.conf.ts",
+    "clean:cache": "if exist .next rmdir /s /q .next && if exist node_modules\\.cache rmdir /s /q node_modules\\.cache"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "bootstrap": "^5.3.8",
+    "jsonwebtoken": "^9.0.3",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "19.2.3",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.6.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/socket.io": "^3.0.1",
+    "@wdio/cli": "^9.23.3",
+    "@wdio/cucumber-framework": "^9.23.3",
+    "@wdio/globals": "^9.23.0",
+    "@wdio/json-reporter": "^9.20.0",
+    "@wdio/local-runner": "^9.23.3",
+    "@wdio/spec-reporter": "^9.23.3",
+    "axios": "^1.13.4",
+    "chromedriver": "^145.0.1",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5",
+    "webdriverio": "^9.23.3"
+  }
+}
